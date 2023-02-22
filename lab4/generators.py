@@ -6,7 +6,7 @@ def sqrtn(n):
       if i == 0:
         continue
       else:
-        print(i)
+        yield(i)
 
 
 n = int(input())
