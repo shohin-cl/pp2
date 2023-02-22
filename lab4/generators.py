@@ -1,16 +1,12 @@
 #Python iterators and generators
 #Task 1
 def sqrtn(n):
-    s = (i**2 for i in range(n))
-    for i in s:
-      if i == 0:
-        continue
-      else:
-        yield(i)
+    for i in range(n+1):
+        yield i ** 2
 
 
 n = int(input())
-sqrtn(n+1)
+sqrtn(n)
 
 #---------------------------------------
 
